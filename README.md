@@ -6,9 +6,11 @@ Right-click an image, choose **Open QR link**, and its HTTP or HTTPS destination
 
 ## Install locally
 
-1. Use desktop Chrome 116 or newer.
+Requires desktop Chrome 116 or newer. No build or package installation needed.
+
+1. Clone: `git clone https://github.com/karolbystrek/qr-code-reader.git`
 2. Open `chrome://extensions` and enable **Developer mode**.
-3. Click **Load unpacked** and select this repository's `extension` folder, not the repository root.
+3. Click **Load unpacked** and select `qr-code-reader/extension`.
 4. Right-click a QR image and choose **Open QR link**.
 
 After editing extension files, click **Reload** on its card in `chrome://extensions`.
@@ -26,10 +28,6 @@ Canvas, video, CSS backgrounds, screenshots, local files, and page-bound `blob:`
 ## Test before pushing
 
 See [TESTING.md](TESTING.md) for automated checks and the manual Chrome checklist. No package installation or build step is required; `npm test` uses Node's built-in test runner.
-
-## Package and publish
-
-See [PUBLISHING.md](PUBLISHING.md) for creating the upload ZIP and submitting it to the Chrome Web Store.
 
 ## Decoder
 
