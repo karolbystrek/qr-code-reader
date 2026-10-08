@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>QR Code Reader test images</title>
+<style>body{font:16px system-ui;max-width:900px;margin:40px auto;padding:0 20px}main{display:flex;flex-wrap:wrap;gap:24px}figure{margin:0;width:240px}img{width:200px;height:200px;object-fit:contain;image-rendering:pixelated}figcaption{margin:12px 0}</style></head>
+<body><h1>QR Code Reader tests</h1><p>Right-click each image and choose <strong>Open QR link</strong>.</p>
+<main>
+<figure><img src="fixtures/url.png" alt="HTTPS QR"><figcaption>Opens https://example.com/</figcaption></figure>
+<figure><img src="fixtures/http.png" alt="HTTP QR"><figcaption>Opens http://example.com/ (the server may redirect)</figcaption></figure>
+<figure><img src="fixtures/inverted.png" alt="Inverted HTTPS QR"><figcaption>Opens https://example.com/</figcaption></figure>
+<figure><img src="fixtures/text.png" alt="Plain text QR"><figcaption>Error: contains text, not a web link</figcaption></figure>
+<figure><img src="fixtures/unsafe.png" alt="JavaScript QR"><figcaption>Error: unsupported URL scheme</figcaption></figure>
+<figure><img src="fixtures/blank.png" alt="Blank image"><figcaption>Error: no QR code</figcaption></figure>
+</main></body></html>

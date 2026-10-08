@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "QR Code Reader",
+  "version": "1.0.0",
+  "description": "Right-click an image to open its QR web link. Decodes locally, with no tracking or settings.",
+  "minimum_chrome_version": "116",
+  "permissions": ["contextMenus", "offscreen", "notifications"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "icons": { "128": "icon.png" }
+}
